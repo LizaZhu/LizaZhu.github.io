@@ -10,23 +10,47 @@
 	background: rgba(49,52,54,0.9);
 	right: 0;	
 	left: 50%;	
-	padding-top: 15%;	
-	padding-left: 15%;	
+	padding-top: 7%;	
+	padding-left: 7%;	
 }
 
 .ourteam__title {
 	color:$yellow;
 	margin-bottom: 15%;	
 }
+
+.ourteam__list {
+	padding-left: 20px;	
+}
+
 .ourteam__item {
-	margin-bottom: 6%;
+	margin-bottom: 7%;
 }
 
 .ourteam__name{
 	text-transform: uppercase;
 	color:white;
 	font-family: 'gagalin regular';
-	font-size: 14px;	
+	font-size: 14px;
+	&:before {
+		content:"";
+		width: 0;	
+		height: 0;	
+		border-top: 6px solid $yellow;
+		border-left: 4px solid transparent;	
+		border-right: 4px solid transparent;	
+	}
+	&:hover	{
+		color: $yellow;
+		&:before {
+		content:"";
+		width: 0;	
+		height: 0;	
+		border-bottom: 6px solid $yellow;
+		border-left: 4px solid transparent;	
+		border-right: 4px solid transparent;	
+		}
+	}
 }
 
 .ourteam__person {
