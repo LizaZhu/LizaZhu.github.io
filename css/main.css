@@ -486,6 +486,10 @@ a {
   font-size: 72px;
   font-family: 'gagalin regular'; }
 
+.first {
+  background: url(../../img/section/salad.png) center center no-repeat;
+  background-size: cover; }
+
 .first-screen__left {
   float: left;
   width: 50%;
