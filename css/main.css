@@ -9,7 +9,6 @@
 @import url(layout/fonts.css);
 @import url(sectoin/first-screen.css);
 @import url(sectoin/we.css);
-@import url(sectoin/burger.css);
 html {
   line-height: 1.15;
   /* 1 */
@@ -633,6 +632,12 @@ a {
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%); }
 
+.ingredients__icon-text {
+  color: white;
+  text-align: center;
+  font-size: 14px;
+  font-family: 'gagalin regular'; }
+
 .ingredients__dropdown {
   display: none;
   background: rgba(255, 255, 255, 0.9);
@@ -645,12 +650,6 @@ a {
 .ingredients__table {
   width: 100%; }
 
-.ingredients__icon-text {
-  color: white;
-  text-align: center;
-  font-size: 14px;
-  font-family: 'gagalin regular'; }
-
 .caloricity {
   position: absolute;
   bottom: 0;
@@ -659,6 +658,12 @@ a {
   color: white;
   font-family: 'gagalin regular';
   text-align: center; }
+
+.caloricity__measure {
+  background: url(../../img/icons/kkal.svg) 50% 50% no-repeat;
+  height: 60px;
+  width: 65px;
+  position: relative; }
 
 .caloricity__amount {
   position: absolute;
@@ -687,7 +692,8 @@ a {
   color: white; }
 
 .burger-slider__text {
-  font-size: 14px; }
+  font-size: 14px;
+  color: white; }
 
 .burger-slider__price {
   color: #e45028;

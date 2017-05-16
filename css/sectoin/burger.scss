@@ -62,6 +62,13 @@
 	text-align: center;
 }
 
+.caloricity__measure{
+	background: url(../../img/icons/kkal.svg) 50% 50% no-repeat;
+	height: 60px;
+	width: 65px;
+	position: relative;
+}
+
 .caloricity__amount {
 	position: absolute;
 	font-size: 20px;
@@ -96,6 +103,7 @@
 
 .burger-slider__text{
 	font-size: 14px;
+	color: white;
 }
 
 .burger-slider__price{
