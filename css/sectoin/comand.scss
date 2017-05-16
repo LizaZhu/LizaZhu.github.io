@@ -3,11 +3,27 @@
 	background-size: cover;
 }
 
+.ourteam{
+	position: absolute;	
+	top: 0;	
+	bottom: 0;	
+	background: rgba(49,52,54,0.9);
+	right: 50%;	
+}
+
 .ourteam__title {
 	color:$yellow;
 }
 
+.ourteam__name{
+	text-transform: uppercase;
+	color:white;
+	font-family: 'gagalin regular';
+	font-size: 14px;	
+}
 
 .ourteam__person {
 	display: none;
 }
+
+
