@@ -8,11 +8,18 @@
 	top: 0;	
 	bottom: 0;	
 	background: rgba(49,52,54,0.9);
-	right: 50%;	
+	right: 0;	
+	left: 50%;	
+	padding-top: 15%;	
+	padding-left: 15%;	
 }
 
 .ourteam__title {
 	color:$yellow;
+	margin-bottom: 15%;	
+}
+.ourteam__item {
+	margin-bottom: 6%;
 }
 
 .ourteam__name{
