@@ -750,7 +750,8 @@ a {
   text-transform: uppercase;
   color: white;
   font-family: 'gagalin regular';
-  font-size: 14px; }
+  font-size: 14px;
+  position: relative; }
   .ourteam__name:before {
     content: "";
     width: 0;
