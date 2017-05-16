@@ -722,4 +722,14 @@ a {
   vertical-align: bottom;
   margin-left: 29px; }
 
+.team {
+  background: url(../../img/section/team.png);
+  background-size: cover; }
+
+.ourteam__title {
+  color: #f9b43b; }
+
+.ourteam__person {
+  display: none; }
+
 /*# sourceMappingURL=main.css.map */
