@@ -890,7 +890,8 @@ a {
 
 .review__button {
   background-color: #2f3234;
-  line-height: 30px; }
+  line-height: 30px;
+  color: white; }
   .review__button:hover {
     background-color: #1f2122; }
 
