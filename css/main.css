@@ -888,14 +888,12 @@ a {
 .review__text {
   margin-bottom: 15px; }
 
-.review__button {
-  background-color: #2f3234; }
-  .review__button:hover {
-    background-color: #1f2122; }
-
 .review__view {
   background-color: #2f3234;
   display: inline-block;
-  color: #ffffff; }
+  color: #ffffff;
+  background-color: #2f3234; }
+  .review__view:hover {
+    background-color: #1f2122; }
 
 /*# sourceMappingURL=main.css.map */

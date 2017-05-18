@@ -59,16 +59,14 @@ transform: translate(-50%, -50%) scale(0.8);
 	margin-bottom: 15px;
 }
 
-.review__button {
-  background-color: rgb(47, 50, 52);
-  &:hover{
-	background-color: rgb(31, 33, 34);
-  }
-}
 
 .review__view {
     background-color: #2f3234;
     display: inline-block;
     color: #ffffff;
+    background-color: rgb(47, 50, 52);
+     &:hover{
+	background-color: rgb(31, 33, 34);
+  }
 }
   
