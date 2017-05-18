@@ -28,6 +28,11 @@
 	background-position: 50% 50%;
 }
 
+.review:hover .review__hover {
+  transform: translate(-50%, -50%) scale(1);
+  opacity: 1;
+}
+
 .review__hover {
 	opacity: 0;
 	width: 100%;
@@ -44,10 +49,7 @@
 	color: white;
 }
 
-.review__photo:hover .review__hover{
-	opacity: 1;
-	transform: translate( -50%,-50%) scale(1);
-}
+
 
 .review__name {
 	font-family: 'gagalin regular';
