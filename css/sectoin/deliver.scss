@@ -1,5 +1,5 @@
 .deliver {
-	background: url(../../img/section/delivery.png);
+	background: url(../img/section/delivery.png);
 	background-size: cover;
 }
 
@@ -118,12 +118,12 @@
 	border-radius: 0;
 }
 
-.order__radio_checkbox .order__radio-elem+.order__radio-fake:after {
+.order__radio_checkbox .order__radio-elen+.order__radio-fake:after {
   background: transparent;
 }
 
-.order__radio_checkbox .order__radio-elem:checked+.order__radio-fake:after {
-  background: url("../../img/icons/check.svg") 50% no-repeat transparent;
+.order__radio_checkbox .order__radio-elen:checked+.order__radio-fake:after {
+  background: url("../img/icons/check.svg") 50% no-repeat transparent;
   background-size: contain;
   width: 11px;
   height: 9px;
@@ -134,4 +134,9 @@
 	vertical-align: middle;
 	font-size: 13px;
 	color: white;
+	border: 0;
+}
+
+.order__form-button_reset {
+	background: transparent;
 }
