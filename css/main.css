@@ -856,7 +856,8 @@ a {
   background-size: cover;
   background-repeat: no-repeat;
   -webkit-filter: grayscale(100%);
-  filter: grayscale(100%); }
+  filter: grayscale(100%);
+  background-position: 50% 50%; }
 
 .review__hover {
   opacity: 0;
