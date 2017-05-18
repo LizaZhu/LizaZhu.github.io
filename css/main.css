@@ -875,7 +875,7 @@ a {
   -ms-transform: translate(-50%, -50%) scale(0.8);
   transform: translate(-50%, -50%) scale(0.8);
   opacity: 0;
-  background: rgba(80, 80, 80, 0.8);
+  background: rgba(40, 40, 40, 0.8);
   padding: 15% 12%;
   transition: 0.3s;
   font-size: 14px;
@@ -889,10 +889,20 @@ a {
   margin-bottom: 15px; }
 
 .review__button {
-  background-color: #2f3234;
-  line-height: 30px;
-  color: white; }
+  background-color: #2f3234; }
   .review__button:hover {
     background-color: #1f2122; }
+
+.review__view {
+  border-radius: 5px;
+  background-color: #2f3234;
+  padding: 8px 12px;
+  display: inline-block;
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: 'Ubuntu-Medium';
+  font-size: 12px;
+  transition: .3s; }
 
 /*# sourceMappingURL=main.css.map */
