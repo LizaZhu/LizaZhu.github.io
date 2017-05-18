@@ -1,0 +1,50 @@
+.menu {
+	background: url(../../img/section/menuburgers.png);
+	background-size: cover;
+}
+
+.menu__title {
+	color: white;
+	text-transform: uppercase;
+	position: absolute;
+	top: 10%;
+	left: 10%;
+}
+
+.menu__list {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+}
+
+.menu__item {
+	float: left;
+	height: 100%;
+}
+
+.menu_trigger {
+	width: 80px;
+	display: block;
+	height: 100%;
+	float:left;
+	background-size: cover;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	position: relative;
+}
+
+.menu_trigger-text {
+	font-size: 40px;
+	color: white;
+	font-family: 'gagalin regular';
+	transform: rotate(-90deg);
+	text-align: center;
+	text-height: 80px;
+	width: 650px;
+	position: absolute;
+	top: 50px;
+	left: 50%;
+	margin-top: -40px;
+	margin-left: -325px;
+}
