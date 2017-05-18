@@ -487,7 +487,7 @@ a {
   font-family: 'gagalin regular'; }
 
 .first {
-  background: url(../../img/section/salad.png) center center no-repeat;
+  background: url(../img/section/salad.png) center center no-repeat;
   background-size: cover; }
 
 .first-screen__left {
