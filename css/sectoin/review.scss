@@ -4,6 +4,7 @@
 
 .review__list {
 	height: 100%;
+	@include clearfix ;
 }
 
 .review__item {

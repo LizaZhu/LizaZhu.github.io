@@ -835,6 +835,10 @@ a {
 
 .review__list {
   height: 100%; }
+  .review__list:after {
+    content: "";
+    display: block;
+    clear: both; }
 
 .review__item {
   float: left;
