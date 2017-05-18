@@ -423,13 +423,91 @@
 				</ul>				
 		</section>
 
-		<section class="section">
+		<section class="section deliver">
 			<div class="container">
+				<div class="order__title title"></div>
+				<div class="order__form">
+					<form class="order__form-tag" id = "order-form">
+						<div class="order__form-coll">
+							<div class="order__form-row order__form-row_double">
+								<label class="order__form-block">
+									<div class="order__form-label">Имя</div>
+									<input class="order__form-input" type="text" name="name">
+								</label>
+								<label class="order__form-block">
+									<div class="order__form-label">Телефон</div>
+									<input class="order__form-input phone-mask" type="tel" name="phone">
+								</label>
+							</div>
+							<div class="order__form-row">
+								<label class="order__form-block">
+									<div class="order__form-label">Улица</div>
+									<input class="order__form-input" type="text" name="street">
+								</label>
+							</div>
+							<div class="order__form-row order__form-row_quatro">
+								<label class="order__form-block">
+									<div class="order__form-label">Дом</div>
+									<input class="order__form-input" type="text" name="house">
+								</label>
+								<label class="order__form-block">
+									<div class="order__form-label">Корпус</div>
+									<input class="order__form-input" type="text" name="corps">
+								</label>
+								<label class="order__form-block">
+									<div class="order__form-label">Квартира</div>
+									<input class="order__form-input" type="text" name="apartment">
+								</label>
+								<label class="order__form-block">
+									<div class="order__form-label">Этаж</div>
+									<input class="order__form-input" type="text" name="floor">
+								</label>
+							</div>
+						</div>
+
+						<div class="order__form-colr">
+							<div class="order__form-row">
+								<label class="order__form-block">
+									<div class="order__form-label">Комментарий</div>
+									<textarea class="order__form-input order__form-input_textarea" name="comment"></textarea>			
+								</label>
+							</div>
+
+							<div class="order__form-row">
+								<label class="order__radio">
+									<input class="order__radio-elen" type="radio" name="payment">
+									<div class="order__radio-fake"></div>
+									<div class="order__radio-title">Потребуется сдача</div>
+								</label>
+								<label class="order__radio">
+									<input class="order__radio-elen" type="radio" name="payment">
+									<div class="order__radio-fake"></div>
+									<div class="order__radio-title">Оплата по карте</div>
+								</label>
+							</div>
+
+							<div class="order__form-row">
+								<label class="order__radio order__radio-checkbox">
+									<input class="order__radio-elen" type="checkbox" name="callback">
+									<div class="order__radio-fake"></div>
+									<div class="order__radio-title">Не перезванивать</div>
+								</label>
+							</div>
+
+							<div class="order__form-row">
+								<input type="submit" value="Заказать" class="order__form-button btn">
+								<input type="reset" value="Очистить" class="order__form-button">		
+							</div>
+
+						</div>
+					</form>
+				</div>
 			</div>
 		</section>
 
 		<section class="section">
 			<div class="container">
+
 			</div>
 		</section>
 
@@ -439,4 +517,3 @@
 
 </body>
 </html>
-<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
