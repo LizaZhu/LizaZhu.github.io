@@ -859,7 +859,7 @@ a {
   filter: grayscale(100%);
   background-position: 50% 50%; }
 
-.review:hover .review__hover {
+.review__person:hover .review__hover {
   -webkit-transform: translate(-50%, -50%) scale(1);
   -ms-transform: translate(-50%, -50%) scale(1);
   transform: translate(-50%, -50%) scale(1);
@@ -871,13 +871,13 @@ a {
   left: 50%;
   width: 100%;
   height: 100%;
-  -webkit-transform: translate(-50%, -50%) scale(0.9);
-  -ms-transform: translate(-50%, -50%) scale(0.9);
-  transform: translate(-50%, -50%) scale(0.9);
+  -webkit-transform: translate(-50%, -50%) scale(0.8);
+  -ms-transform: translate(-50%, -50%) scale(0.8);
+  transform: translate(-50%, -50%) scale(0.8);
   opacity: 0;
-  background: rgba(20, 20, 20, 0.7);
-  padding: 17% 12% 0;
-  transition: .3s;
+  background: rgba(80, 80, 80, 0.8);
+  padding: 15% 12%;
+  transition: 0.3s;
   font-size: 14px;
   color: white; }
 
