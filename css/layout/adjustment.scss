@@ -26,6 +26,7 @@ body {
 	overflow: hidden;//чтобы не появлялось горизонт.скрола
 	min-height: 100%;
 	min-width: $container-width + 20px;
+	position: relative;
 }
 
 .container {
@@ -103,3 +104,4 @@ p {
 	font-size: 72px;
 	font-family: 'gagalin regular';
 }
+
