@@ -7,7 +7,6 @@
  *    IE on Windows Phone and in iOS.
  */
 @import url(layout/fonts.css);
-@import url(sectoin/we.css);
 html {
   line-height: 1.15;
   /* 1 */
@@ -406,16 +405,14 @@ body {
   font-size: 16px;
   line-height: 1.42;
   font-family: 'ubuntu light';
-  color: #2f3234; }
+  color: #2f3234;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
 
 .wrapper {
   overflow: hidden;
   min-height: 100%;
   min-width: 960px; }
-  .wrapper:after {
-    content: "";
-    display: block;
-    height: 60px; }
 
 .container {
   width: 940px;
@@ -433,8 +430,11 @@ section {
 
 footer {
   height: 60px;
-  margin-top: -60px;
   min-width: 960px; }
+  footer:after {
+    content: "";
+    display: block;
+    clear: both; }
 
 ul {
   padding: 0;
@@ -454,6 +454,10 @@ h6 {
 
 a {
   text-decoration: none; }
+
+p {
+  padding: 0;
+  margin: 0; }
 
 .center {
   position: absolute;
@@ -580,6 +584,10 @@ a {
 .link__order {
   display: inline-block; }
 
+.we {
+  background: url(../img/section/whitebroads.png) center center no-repeat;
+  background-size: cover; }
+
 .we__title {
   text-align: center; }
 
@@ -664,7 +672,7 @@ a {
   text-align: center; }
 
 .caloricity__measure {
-  background: url(../../img/icons/kkal.svg) 50% 50% no-repeat;
+  background: url(../img/icons/kkal.svg) 50% 50% no-repeat;
   height: 60px;
   width: 65px;
   position: relative; }
@@ -723,7 +731,7 @@ a {
   margin-left: 29px; }
 
 .team {
-  background: url(../../img/section/team.png);
+  background: url(../img/section/team.png);
   background-size: cover; }
 
 .ourteam {
@@ -764,14 +772,49 @@ a {
     position: absolute;
     top: 8px;
     left: -18px; }
-  .ourteam__name:hover {
-    color: #f9b43b; }
-    .ourteam__name:hover:before {
-      border-bottom: 6px solid #f9b43b;
-      border-top: 0px solid transparent; }
+
+.ourteam__name_active {
+  color: #f9b43b; }
+  .ourteam__name_active:before {
+    border-bottom: 6px solid #f9b43b;
+    border-top: 0px solid transparent; }
+  .ourteam__name_active + .ourteam__person {
+    display: block; }
 
 .ourteam__person {
-  display: none; }
+  display: none;
+  margin-top: 17px; }
+  .ourteam__person:after {
+    content: "";
+    display: block;
+    clear: both; }
+
+.ourteam__pic {
+  float: left;
+  width: 30%;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 20px; }
+
+.ourteam__pic-img {
+  width: auto;
+  height: 100%;
+  display: block;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%; }
+
+.ourteam__text {
+  float: left;
+  max-width: 60%;
+  color: #fff;
+  font-size: 14px; }
+
+.ourteam__post {
+  font-family: 'ubuntu bold';
+  margin-bottom: 20px; }
 
 .menu {
   background: url(../img/section/menuburgers.png);
@@ -821,7 +864,7 @@ a {
   margin-left: -325px; }
 
 .menu__content {
-  display: none;
+  width: 0;
   height: 100%;
   background-color: rgba(47, 50, 52, 0.9);
   float: left; }
@@ -829,7 +872,14 @@ a {
 .menu__text {
   color: white;
   font-size: 14px;
+  line-height: 24px;
   padding: 60px 30px; }
+
+.menu_trigger_active .menu_trigger-text {
+  color: #f9b43b; }
+
+.menu_trigger_active + .menu__content {
+  width: 540px; }
 
 .review {
   background: #000; }
@@ -1023,5 +1073,61 @@ a {
 
 .order__form-button_reset {
   background: transparent; }
+
+.yandexmap {
+  height: calc(100% - 60px); }
+
+.footer {
+  background: url(../img/section/footerbroad.jpg) 50% 100% no-repeat;
+  background-size: cover;
+  padding-top: 10px; }
+
+.footer__left {
+  width: 50%;
+  float: left;
+  color: white;
+  font-size: 14px; }
+
+.footer_tel {
+  color: #e45028;
+  margin-top: 5px;
+  display: inline-block; }
+  .footer_tel:before {
+    content: "";
+    background: url("../img/icons/phone.png") 50% 50% no-repeat;
+    width: 12px;
+    height: 11px;
+    padding-right: 5px;
+    display: inline-block; }
+
+.footer__right {
+  width: 50%;
+  float: right;
+  text-align: right; }
+
+.socials__item {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 13px; }
+
+.socials__link {
+  display: inline-block;
+  width: 23px;
+  height: 23px;
+  opacity: 0.3;
+  transition: 0.3s; }
+
+.socials__link:hover {
+  opacity: 1; }
+
+.socials__icon {
+  display: block;
+  width: 100%;
+  height: 100%;
+  fill: #fff; }
+
+.socials__link svg {
+  width: 100%;
+  height: 100%; }
 
 /*# sourceMappingURL=main.css.map */

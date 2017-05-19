@@ -1,5 +1,5 @@
 .team {
-	background: url(../../img/section/team.png);
+	background: url(../img/section/team.png);
 	background-size: cover;
 }
 
@@ -46,17 +46,56 @@
 		top: 8px;	
 		left: -18px;	
 	}
-	&:hover	{
-		color: $yellow;
+}
+
+.ourteam__name_active {
+	color: $yellow;
 		&:before {
 		border-bottom: 6px solid $yellow;
 		border-top: 0px solid transparent;	
 		}
-	}
+		&+.ourteam__person {
+		display: block;
 }
+}
+
 
 .ourteam__person {
 	display: none;
+	@include clearfix ;
+	margin-top: 17px;
 }
 
 
+
+.ourteam__pic {
+	float: left;
+	width: 30%;
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	overflow: hidden;
+	margin-right: 20px;
+}
+
+
+.ourteam__pic-img {
+	width: auto;
+	height: 100%;
+	display: block;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+}
+
+.ourteam__text {
+	float: left;
+	max-width: 60%;
+	color: #fff;
+	font-size: 14px;
+}
+
+.ourteam__post {
+	font-family: 'ubuntu bold';
+	margin-bottom: 20px;
+}

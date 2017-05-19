@@ -34,6 +34,7 @@
 	position: relative;
 }
 
+
 .menu_trigger-text {
 	font-size: 40px;
 	color: white;
@@ -50,7 +51,7 @@
 }
 
 .menu__content {
-	display: none;
+	width:0;
 	height: 100%;
 	background-color: rgba(47, 50, 52, 0.9);
     float: left;
@@ -59,5 +60,15 @@
 .menu__text {
 	color: white;
 	font-size: 14px;
+	line-height: 24px;
 	padding: 60px 30px;
+}
+
+.menu_trigger_active {
+	& .menu_trigger-text{
+		color: $yellow;
+	}
+	&+.menu__content {
+		width: 540px;
+	}
 }
