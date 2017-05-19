@@ -6,9 +6,6 @@
 
 .fixed-menu__item {
 	margin-bottom: 5px;
-	&:hover .fixed-menu__link:before{
-		opacity: 1;
-	}
 }
 
 .fixed-menu__link {
@@ -16,7 +13,9 @@
 	height: 16px;
 	display: block;
 	position: relative;
-	&:after,&:before {
+	border: 1px solid transparent;
+	border-radius: 50%;
+	&:after {
 		content: "";
 		display: block;
 		position: absolute;
@@ -30,10 +29,7 @@
 		height: 6px;
 		background: #fff;
 	}
-	&:before {
-		width: 16px;
-		height: 16px;
-		opacity: 0;
+	&:hover {
 		border: 1px solid #fff;
 		transition: 0.3s;
 	}
