@@ -8,7 +8,7 @@ $(document).ready(function(){
 		var otherPerson = item.siblings();
 		var  otherPersonInf = otherPerson.find('.ourteam__person');
 
-		if (item.hasClass('ourteam__name_active')) {
+		if (item.hasClass('ourteam__item_active')) {
 			personBlock.css('display', 'none');
 			item.removeClass('ourteam__item_active');
 		} else {
