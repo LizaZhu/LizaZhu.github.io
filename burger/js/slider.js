@@ -28,12 +28,12 @@ $(document).ready(function(){
 		var  otherPersonInf = otherPerson.find('.menu__content');
 
 		if (item.hasClass('menu__item_active')) {
-			personBlock.css('width', '0');
+			personBlock.css('width', 0);
 			item.removeClass('menu__item_active');
 		} else {
 			item.addClass('menu__item_active');
-			personBlock.css('width', 'reqWidth');
-			otherPersonInf.css('width', '0');
+			personBlock.css('width', '540px');
+			otherPersonInf.css('width', 0);
 			otherPerson.removeClass('menu__item_active')
 		}
 	})
