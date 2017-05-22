@@ -799,7 +799,7 @@ p {
     display: block; }
 
 .ourteam__person {
-  height: 0;
+  display: none;
   margin-top: 17px; }
   .ourteam__person:after {
     content: "";
