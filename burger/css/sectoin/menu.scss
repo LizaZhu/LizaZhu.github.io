@@ -23,7 +23,7 @@
 	height: 100%;
 }
 
-.menu_trigger {
+.menu__trigger {
 	width: 80px;
 	display: block;
 	height: 100%;
@@ -35,7 +35,7 @@
 }
 
 
-.menu_trigger-text {
+.menu__trigger-text {
 	font-size: 40px;
 	color: white;
 	font-family: 'gagalin regular';
@@ -64,8 +64,8 @@
 	padding: 60px 30px;
 }
 
-.menu_trigger_active {
-	& .menu_trigger-text{
+.menu__trigger_active {
+	& .menu__trigger-text{
 		color: $yellow;
 	}
 	&+.menu__content {
