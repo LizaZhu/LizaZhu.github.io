@@ -3,11 +3,20 @@
   background-size: cover;
 }
 
+.first-screen__content {
+	@include clearfix ;
+}
+
 .first-screen__left {
 	float: left;
 	width: 50%;
 	display: inline-block;
 	vertical-align: middle;
+}
+
+.first-screen__img {
+	width: 100%;
+	height: auto;
 }
 
 .first-screen__right {

@@ -495,11 +495,20 @@ p {
   background: url(../img/section/salad.png) center center no-repeat;
   background-size: cover; }
 
+.first-screen__content:after {
+  content: "";
+  display: block;
+  clear: both; }
+
 .first-screen__left {
   float: left;
   width: 50%;
   display: inline-block;
   vertical-align: middle; }
+
+.first-screen__img {
+  width: 100%;
+  height: auto; }
 
 .first-screen__right {
   float: right;
@@ -603,10 +612,12 @@ p {
   padding: 0 15px;
   text-align: center; }
 
+.we__icon {
+  margin-top: 27px; }
+
 .we__value {
   font-size: 24px;
-  font-family: 'lifehack medium';
-  margin-top: 27px; }
+  font-family: 'lifehack medium'; }
 
 .we__desk {
   margin-top: 27px;
@@ -838,7 +849,7 @@ p {
   float: left;
   height: 100%; }
 
-.menu_trigger {
+.menu__trigger {
   width: 80px;
   display: block;
   height: 100%;
@@ -848,7 +859,7 @@ p {
   background-repeat: no-repeat;
   position: relative; }
 
-.menu_trigger-text {
+.menu__trigger-text {
   font-size: 40px;
   color: white;
   font-family: 'gagalin regular';
@@ -876,10 +887,10 @@ p {
   line-height: 24px;
   padding: 60px 30px; }
 
-.menu_trigger_active .menu_trigger-text {
+.menu__trigger_active .menu__trigger-text {
   color: #f9b43b; }
 
-.menu_trigger_active + .menu__content {
+.menu__trigger_active + .menu__content {
   width: 540px; }
 
 .review {
@@ -1163,5 +1174,3 @@ p {
   .fixed-menu__link:hover {
     border: 1px solid #fff;
     transition: 0.3s; }
-
-/*# sourceMappingURL=main.css.map */
