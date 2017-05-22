@@ -4,7 +4,6 @@ $(document).ready(function(){
 
 		var item = $(this).closest('.ourteam__item');
 		var personBlock = item.find('.ourteam__person');
-		var reqHeight = personBlock.outerHeight();
 		var otherPerson = item.siblings();
 		var  otherPersonInf = otherPerson.find('.ourteam__person');
 
@@ -16,6 +15,26 @@ $(document).ready(function(){
 			personBlock.css('display', 'block');
 			otherPersonInf.css('display', 'none');
 			otherPerson.removeClass('ourteam__item_active')
+		}
+	})
+
+	$('.menu__trigger').on('click',function(e){
+		e.preventDefault();
+
+		var item = $(this).closest('.menu__item');
+		var personBlock = item.find('.menu__content');
+		var reqWidth = personBlock.outerWidth();
+		var otherPerson = item.siblings();
+		var  otherPersonInf = otherPerson.find('.menu__content');
+
+		if (item.hasClass('menu__item_active')) {
+			personBlock.css('width', '0');
+			item.removeClass('menu__item_active');
+		} else {
+			item.addClass('menu__item_active');
+			personBlock.css('width', 'reqWidth');
+			otherPersonInf.css('width', '0');
+			otherPerson.removeClass('menu__item_active')
 		}
 	})
 })
