@@ -895,9 +895,6 @@ p {
 .menu__item_active .menu__trigger-text {
   color: #f9b43b; }
 
-.menu__item_active .menu__content {
-  width: 540px; }
-
 .review {
   background: #000; }
 
