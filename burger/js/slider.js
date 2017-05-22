@@ -13,7 +13,7 @@ $(document).ready(function(){
 			item.removeClass('ourteam__name_active');
 		} else {
 			item.addClass('ourteam__name_active');
-			personBlock.('display', 'block');
+			personBlock.css('display', 'block');
 			otherPersonInf.css('display', 'none');
 			otherPerson.removeClass('ourteam__name_active')
 		}
