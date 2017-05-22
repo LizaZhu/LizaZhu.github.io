@@ -892,10 +892,10 @@ p {
   line-height: 24px;
   padding: 60px 30px; }
 
-.menu__trigger_active .menu__trigger-text {
+.menu__item_active .menu__trigger-text {
   color: #f9b43b; }
 
-.menu__trigger_active + .menu__content {
+.menu__item_active .menu__content {
   width: 540px; }
 
 .review {
