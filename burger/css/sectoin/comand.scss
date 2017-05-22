@@ -48,7 +48,8 @@
 	}
 }
 
-.ourteam__name_active {
+.ourteam__item_active {
+	.ourteam__name{
 	color: $yellow;
 		&:before {
 		border-bottom: 6px solid $yellow;
@@ -56,12 +57,13 @@
 		}
 		&+.ourteam__person {
 		display: block;
+	}
 }
 }
 
 
 .ourteam__person {
-	display: none;
+	height: 0;
 	@include clearfix ;
 	margin-top: 17px;
 }
