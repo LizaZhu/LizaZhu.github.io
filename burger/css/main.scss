@@ -10,6 +10,10 @@ $orange: #e45028;
 @import "layout/fonts.css";
 @import "layout/adjustment";
 
+//slick
+@import "../slick/slick.scss";
+@import "../slick/slick-theme.scss";
+
 //section
 @import "sectoin/first-screen";
 @import "sectoin/header";

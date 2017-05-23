@@ -18,7 +18,7 @@ $(document).ready(function(){
 		}
 	})
 
-	$('.menu__trigger').on('click',function(e){
+	/*$('.menu__trigger').on('click',function(e){
 		e.preventDefault();
 
 		var item = $(this).closest('.menu__item');
@@ -32,9 +32,14 @@ $(document).ready(function(){
 			item.removeClass('menu__item_active');
 		} else {
 			item.addClass('menu__item_active');
-			personBlock.css('width', '540px');
+			personBlock.css('width', 540px);
 			otherPersonInf.css('width', 0);
 			otherPerson.removeClass('menu__item_active')
 		}
-	})
+	})*/
+
+
+	$('.burger-slider').slick({
+
+	});
 })
