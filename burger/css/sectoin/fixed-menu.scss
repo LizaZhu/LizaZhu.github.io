@@ -2,6 +2,7 @@
 	position: fixed;
 	top: 100px;
 	right: 50px;
+	z-index: 100;
 }
 
 .fixed-menu__item {
@@ -29,8 +30,11 @@
 		height: 6px;
 		background: #fff;
 	}
-	&:hover {
-		border: 1px solid #fff;
+	
+	
+}
+
+.fixed-menu__item_active .fixed-menu__link{
+	border: 1px solid #fff;
 		transition: 0.3s;
-	}
 }
