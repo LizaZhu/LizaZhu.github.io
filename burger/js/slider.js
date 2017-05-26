@@ -1,3 +1,4 @@
+//VERTICAL ACCO
 $(document).ready(function(){
 	$('.ourteam__name').on('click',function(e){
 		e.preventDefault();
@@ -8,17 +9,28 @@ $(document).ready(function(){
 		var  otherPersonInf = otherPerson.find('.ourteam__person');
 
 		if (item.hasClass('ourteam__item_active')) {
-			personBlock.css('display', 'none');
+			personBlock.slideUp();
 			item.removeClass('ourteam__item_active');
 		} else {
 			item.addClass('ourteam__item_active');
-			personBlock.css('display', 'block');
-			otherPersonInf.css('display', 'none');
+			personBlock.slideDown();
+			otherPersonInf.slideUp();
 			otherPerson.removeClass('ourteam__item_active')
 		}
 	})
 
-	/*$('.menu__trigger').on('click',function(e){
+
+	var slider = $('.burger-slider').slick({
+		prevArrow: $(".burger-slider__btn_prev"),
+  		nextArrow: $(".burger-slider__btn_next"),
+	});
+
+})
+
+
+//HORIZONTAL ACCO
+$(function () { 
+	$('.menu__trigger').on('click',function(e){
 		e.preventDefault();
 
 		var item = $(this).closest('.menu__item');
@@ -28,18 +40,26 @@ $(document).ready(function(){
 		var  otherPersonInf = otherPerson.find('.menu__content');
 
 		if (item.hasClass('menu__item_active')) {
-			personBlock.css('width', 0);
+			personBlock.animate({'width': '0'});
 			item.removeClass('menu__item_active');
 		} else {
 			item.addClass('menu__item_active');
-			personBlock.css('width', 540px);
-			otherPersonInf.css('width', 0);
+			personBlock.animate({'width': '540'});
+			otherPersonInf.animate({'width': '0'});
 			otherPerson.removeClass('menu__item_active')
 		}
-	})*/
+	})
+	$(document).on('click', function(e) {
+		var $this = $(e.target);
+		if(!$this.closest('.menu__list').length) {
+			$('.menu__content').animate({'width':'0'});
+			$('.menu__item').removeClass('menu__item_active');
+		}
 
+	})
+});
 
-	$('.burger-slider').slick({
-
-	});
-})
+//input mask
+$(function () {
+	$('.phone-mask').inputmask('+7 (999) 999 99 99');
+});

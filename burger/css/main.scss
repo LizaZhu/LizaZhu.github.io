@@ -5,14 +5,17 @@ $grey: #2f3234;
 $yellow: #f9b43b;
 $orange: #e45028;
 
+
+//slick
+@import "../slick/slick.scss";
+@import "../slick/slick-theme.scss";
+
 //layout
 @import "layout/normalize";
 @import "layout/fonts.css";
 @import "layout/adjustment";
 
-//slick
-@import "../slick/slick.scss";
-@import "../slick/slick-theme.scss";
+
 
 //section
 @import "sectoin/first-screen";

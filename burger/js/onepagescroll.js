@@ -39,6 +39,23 @@
 		var href = parseInt($(this).attr('href'));
 		performTransition(href)
 	})
+
+	$(document).on('keydown', function(e){
+		var activeSection = sections.filter('.active');
+		var nextSection = activeSection.next();
+		var prevSection = activeSection.prev();
+		switch (e.keyCode){
+			case 40:
+				if (nextSection.length){//скролл вниз
+					performTransition(nextSection.index())
+				}
+			case 38:
+				if (prevSection.length){//скролл вверх
+				performTransition(prevSection.index())
+			}
+		}
+	})
+
 	
 
 }())
