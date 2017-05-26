@@ -70,3 +70,43 @@ transform: translate(-50%, -50%) scale(0.8);
   }
 }
   
+.popup {
+	display: none;
+}
+
+.full-review {
+	padding: 25px 20px;
+	position: relative;
+}
+
+.full-review__close {
+    width: 15px;
+    height: 15px;
+    display: block;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    opacity: .7;
+    transition: .3s;
+}
+
+.full-review__close-pic {
+	width: 100%;
+	height: 100%;
+}
+
+.full-review__title {
+    font-family: 'gagalin regular';
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+}
+
+
+.fancybox-overlay {
+	background: rgba(#2f3234, 0.9) !important;
+}
+
+.fancybox-close {
+	display: none;
+}
