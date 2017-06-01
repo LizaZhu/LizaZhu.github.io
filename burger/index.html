@@ -658,7 +658,7 @@
 			<div class="container center">
 				<div class="order__title title">Закажите доставку</div>
 				<div class="order__form">
-					<form class="order__form-tag" id = "order-form">
+					<form class="order__form-tag" id = "order-form" action="mail.php">
 						<div class="order__form-coll">
 							<div class="order__form-row order__form-row_double">
 								<label class="order__form-block">
@@ -737,7 +737,7 @@
 		</section>
 
 		<section class="section map">
-				<div class="yandexmap"></div>
+				<div class="yandexmap" id="map"></div>
 				<footer class="footer">
 				<div class="container">
 					<div class="footer__left">
@@ -831,7 +831,8 @@
 <script src = "fancybox/lib/jquery.mousewheel.pack.js"></script>
 <script src = "fancybox/source/jquery.fancybox.pack.js"></script>
 
-<script src = "js/slider.js"></script>
+<script src = "js/main.js"></script>
 <script src = "js/onepagescroll.js"></script>
+<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
 </body>
 </html>

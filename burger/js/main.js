@@ -79,3 +79,22 @@ $(function () {
 		$.fancybox.close();
 	});
 });
+
+//form submit
+$(function () {
+	$('#order-form').on('submit',function(e){
+		e.preventDefault();
+		var 
+			form = $(this),
+			formData = form.serialize();
+
+		$.ajax({
+			url:'mail.php',
+			type: 'POST',
+			data:formData,
+			success: function(data){
+				
+			}
+		})
+	})
+})
