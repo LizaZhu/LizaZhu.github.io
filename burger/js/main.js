@@ -89,7 +89,7 @@ $(function () {
 			formData = form.serialize();
 		console.log(formData)
 		$.ajax({
-			url:'mail.php',
+			url:'../mail.php',
 			type: 'GET',
 			data:formData,
 			success: function(data){
