@@ -90,7 +90,7 @@ $(function () {
 		console.log(formData)
 		$.ajax({
 			url:'mail.php',
-			type: 'POST',
+			type: 'GET',
 			data:formData,
 			success: function(data){
 				
