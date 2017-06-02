@@ -737,7 +737,7 @@
 		</section>
 
 		<section class="section map">
-				<div class="yandexmap" id="map"></div>
+				<div class="yandex-map" id="map"></div>
 				<footer class="footer">
 				<div class="container">
 					<div class="footer__left">
@@ -814,8 +814,19 @@
       </div>
 	</div>
 </div>
-<div class="status-popup popup" id='success'></div>
-<div class="status-popup popup" id='error'></div>
+<div class="status-popup popup" id='success'>
+	<div class="status-popup__inner">
+		<div class="status-popup__message">Сообщение отправлено</div>
+		<a class="status-popup__close btn" href="#">Закрыть</a>
+	</div>
+</div>
+<div class="status-popup popup" id='error'>
+	<div class="status-popup__inner">
+		<div class="status-popup__message">Произошла ошибка</div>
+		<a class="status-popup__close btn" href="#">Закрыть</a>
+	</div>
+</div>
+
 
 <script src = "js/jquery-3.2.1.min.js"></script>	
 
@@ -832,8 +843,9 @@
 <script src = "fancybox/lib/jquery.mousewheel.pack.js"></script>
 <script src = "fancybox/source/jquery.fancybox.pack.js"></script>
 
-<script src = "js/main.js"></script>
 <script src = "js/onepagescroll.js"></script>
 <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+
+<script src = "js/main.js"></script>
 </body>
 </html>
