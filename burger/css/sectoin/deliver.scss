@@ -142,3 +142,23 @@
 .order__form-button_reset {
 	background: transparent;
 }
+
+.popup{
+	display: none;
+}
+
+.status-popup {
+	width: 240px;
+}
+.status-popup__inner {
+ padding: 10px;
+ text-align: center;
+}
+
+.status-popup__message {
+ padding: 15px 0px;
+}
+
+.status-popup__close {
+	display: inline-block;
+}
