@@ -1,0 +1,150 @@
+.page {
+	float: right;
+	width: 720px;	
+	position: relative;
+
+}
+ .career {
+ 	margin-left: 20px;
+ }
+
+
+.career__info {
+	margin-top: 25px;
+}
+
+.career__left {
+	float: left;
+	width: 220px;
+}
+
+.career__pic {
+	width: 220px;
+	height: 220px;
+	border-radius: 9px;
+	overflow: hidden;
+}
+
+.career__pic-img {
+	width: auto;
+	display: block;
+	height: 100%;
+}
+
+.career__right{
+	float: right;
+	width: 480px;
+}
+
+.career__list{
+	text-align: right;	
+}
+
+.career__item {padding-left: 70px;}
+
+
+.career__block{
+	border-radius: 10px;
+	  background-color: rgb(255, 255, 255);
+	  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2);
+	  margin-bottom: 25px;
+	  /*margin-left: 62px;*/
+	  padding: 20px 22px;
+	  color:#5a5a5a;
+	  display: inline-block;
+	  width: 380px;
+	  text-align: left;
+	  position: relative;
+}
+
+.career__block:after,
+.career__block:before {
+	content: '';
+	display: block;
+	width: 1px;
+	background: #dddddd;
+	position: absolute;
+	right: 100%;
+	margin-right: 19.5px;
+}
+
+.career__block:before{
+	top: 0;
+	bottom: 50%;
+}
+
+.career__block:after{
+	top: 50%;
+	bottom: -25px;
+}
+
+.career__item:first-child .career__block:before , 
+.career__item:last-child .career__block:after{
+	display: none;
+}
+
+
+
+.career__title {
+	 font-size: 21px;
+	margin-bottom: 10px;
+}
+
+.career__position, .career__date {
+	font-weight: 300;
+	color: #727272;
+	font-size: 15px;
+}
+
+.career__date {
+	margin-bottom: 0;
+}
+
+
+.career__year {
+	font-size: 14px;
+	position:absolute;
+	right:100%;
+	top: 50%;
+	margin-right: 35px;
+	line-height: 20px;
+	margin-top: -10px;
+}
+ 
+.career__year:after {
+	content: "";
+	display: block;
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	background: #33c1e3;
+	position:absolute;
+	right: -25px;
+	top: 50%;
+	margin-top: -10px;
+	border: 5px solid #f6f6f6;
+	z-index: 1;
+
+}
+
+.career__item:hover .career__block {
+	background-color:#33c1e3;
+}
+
+.career__item:hover .career__title, .career__item:hover .career__position, .career__item:hover  .career__date{
+	color: white;
+}
+
+.career__item:hover  .career__year:after {
+	border-color: #94e0f2;
+}
+
+.career__item:hover .career__year {
+	font-weight: 600;
+	color: #33c1e3;
+}
+
+
+
+
+<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
