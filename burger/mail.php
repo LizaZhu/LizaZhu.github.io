@@ -1,6 +1,11 @@
 <?php
-$name = $_GET['name'];
-$message = 'Сообщение от пользователя: $name';
+
+header('Content-Type:applcation/json');
+$name = $_POST['name'];
+$message = 'Сообщение от пользователя: ' + $name;
 $result = mail('zhuykova7@gmail.com','Message from',$message);
 
-echo $name;
+echo json_encode(array(
+	'status' => $result
+));
+
