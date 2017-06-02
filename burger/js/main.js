@@ -90,11 +90,41 @@ $(function () {
 
 		$.ajax({
 			url:'../mail.php',
-			type: 'GET',
+			type: 'POST',
 			data:formData,
 			success: function(data){
-				
+
+				var popup = data.status ? '#success':'#error';
+
+					$.fancybox.open([
+						{href:popup}
+					], {
+						type:'inline',
+						maxWidth: 250,
+						fitToView: false,
+						padding:0,
+						afterClose:function() {
+							form.trigger('reset');
+						}
+					});
 			}
 		})
-	})
-})
+	});
+	$('.status-popup__close').on('click',function(e){
+		e.preventDefault();
+		$.fancybox.close();
+	});
+});
+
+//yandex map
+$(function() {
+	ymaps.ready(init);
+    var myMap;
+
+    function init(){     
+        myMap = new ymaps.Map("map", {
+            center: [58.00, 56.15],
+            zoom: 11
+        });
+    }
+});
