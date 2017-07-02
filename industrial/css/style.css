@@ -1,0 +1,381 @@
+body {
+  font-family: 'hk_grotesklight',Arial,sans-serif;
+  color: #fff;
+  font-size: 24px;
+  line-height: 1.42;
+  -webkit-font-smoothing: antialiased;
+  background-color: #212c44; }
+
+.container {
+  position: relative;
+  width: 1170px;
+  margin: 0px auto; }
+
+.header {
+  height: 180px; }
+  .header:after {
+    content: '';
+    display: block;
+    clear: both; }
+
+.header__right {
+  float: right;
+  width: 50%;
+  padding-top: 80px; }
+  .header__right:after {
+    content: '';
+    display: block;
+    clear: both; }
+
+.header__left {
+  float: left;
+  width: 50%;
+  padding-top: 60px; }
+
+.search__form {
+  float: right; }
+  .search__form:after {
+    content: '';
+    display: block;
+    clear: both; }
+
+.search__button, .search__text {
+  border: none;
+  outline: none;
+  line-height: 40px;
+  padding: 0;
+  margin: 0;
+  color: #62767f;
+  border-bottom: 2px solid  #62767f;
+  float: left; }
+
+.search__button {
+  background: url(../img/search.png) center center no-repeat;
+  width: 30px;
+  cursor: pointer;
+  font-family: 'hk_grotesklight';
+  font-style: 24px; }
+
+.search__text {
+  text-align: left;
+  width: 150px;
+  background-color: transparent;
+  color: #62767f; }
+
+.gina {
+  width: 1170px;
+  height: auto;
+  position: relative;
+  margin-bottom: 40px; }
+
+.gina__pic {
+  width: 100%;
+  height: auto; }
+
+.kickstarter {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 35px 35px 0 0; }
+
+.kickstarter__text {
+  font: 'league_spartanregular';
+  font-size: 18px;
+  color: #2bdd73;
+  font-weight: bold;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%) rotate(-12deg);
+  -ms-transform: translate(-50%, -50%) rotate(-12deg);
+  transform: translate(-50%, -50%) rotate(-12deg); }
+
+.gina__text {
+  position: absolute;
+  width: 370px;
+  height: auto;
+  top: 0;
+  left: 0;
+  margin-top: 100px;
+  margin-left: 60px; }
+
+.gina__head {
+  font-family: 'league_spartanregular';
+  font-size: 80px;
+  margin-bottom: 35px;
+  text-transform: uppercase; }
+
+.gina__desk {
+  font-size: 32px; }
+
+.btn {
+  height: 50px;
+  border: 3px solid #f0caa1;
+  width: 120px;
+  position: absolute;
+  text-align: center;
+  padding: 10px 0;
+  color: #fff;
+  display: inline-block;
+  text-transform: uppercase;
+  font-family: 'league_spartanregular';
+  font-size: 18px; }
+  .btn:hover {
+    border-color: #edbe8a;
+    -webkit-box-shadow: inset 0 0 5px 2px #F8ED8E;
+    box-shadow: inset 0 0 5px 2px #F8ED8E; }
+
+.btn_gina {
+  width: 160px;
+  height: 60px;
+  bottom: 0;
+  left: 0;
+  margin-left: 60px;
+  margin-bottom: 120px;
+  text-transform: capitalize;
+  font-family: 'hk_grotesklight';
+  font-size: 24px; }
+
+.buy {
+  margin-bottom: 40px; }
+
+.beoplay {
+  width: 565px;
+  height: 520px;
+  float: left;
+  overflow: hidden;
+  background: #61bba6;
+  position: relative; }
+
+.beoplay__pic {
+  position: absolute;
+  left: -25%;
+  bottom: -40%; }
+
+.beoplay__text {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-right: 30px;
+  width: 440px;
+  text-align: right; }
+
+.btn__beoplay {
+  right: 0;
+  bottom: 0;
+  margin-right: 30px;
+  margin-bottom: 225px; }
+
+.leica {
+  width: 565px;
+  float: right;
+  height: 520px;
+  overflow: hidden;
+  background: #757dc9;
+  position: relative; }
+  .leica:after {
+    content: '';
+    display: block;
+    clear: both; }
+
+.leica__pic {
+  position: absolute;
+  right: -20%;
+  bottom: -10%; }
+
+.leica__text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-left: 30px;
+  width: 340px; }
+
+.head_b {
+  font-family: 'league_spartanregular';
+  font-size: 48px;
+  margin-top: 60px;
+  text-transform: uppercase; }
+
+.desk_b {
+  font-size: 24px; }
+
+.btn__leica {
+  left: 0;
+  bottom: 0;
+  margin-left: 30px;
+  margin-bottom: 225px; }
+
+.buy {
+  margin-bottom: 40px; }
+  .buy:after {
+    content: '';
+    display: block;
+    clear: both; }
+
+.details {
+  margin-bottom: 150px; }
+  .details:after {
+    content: '';
+    display: block;
+    clear: both; }
+
+.molekule, .signature, .dr {
+  width: 360px;
+  height: 440px;
+  overflow: hidden;
+  float: left;
+  position: relative; }
+  .molekule:after, .signature:after, .dr:after {
+    content: '';
+    display: block;
+    clear: both; }
+  .molekule img, .signature img, .dr img {
+    position: absolute; }
+
+.molekule {
+  background: #eb7c61; }
+
+.signature {
+  background: #537683;
+  margin-left: 45px; }
+
+.dr {
+  background: #81cada;
+  margin-left: 45px; }
+
+.molekule__pic {
+  bottom: -110%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%); }
+
+.signature__pic {
+  bottom: 30%;
+  left: -88%; }
+
+.dr__pic {
+  bottom: -30%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%); }
+
+.molekule__text, .dr__text, .signature__text {
+  text-align: center;
+  width: 280px;
+  margin-top: 65px;
+  position: absolute; }
+
+.molekule__text, .dr__text {
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%); }
+
+.signature__text {
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  margin-bottom: 120px; }
+
+.head-s {
+  margin-top: 5px;
+  font-family: 'league_spartanregular';
+  font-size: 36px;
+  text-transform: uppercase; }
+
+.desk-s {
+  font-size: 16px; }
+
+.btn__molekule, .btn__signature, .btn__dr {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%); }
+
+.btn__molekule, .btn__dr {
+  top: 160px; }
+
+.btn__signature {
+  bottom: 37px; }
+
+.subs {
+  text-align: center;
+  width: 820px;
+  color: #63767f;
+  margin: 0 auto 100px; }
+
+.subs__head {
+  font-size: 36px; }
+
+.subs__desk {
+  font-size: 18px; }
+
+.subs__form {
+  margin-top: 50px; }
+
+.subs__mail, .subs__button {
+  width: 360px;
+  height: 60px;
+  border: 3px solid #63767f;
+  background: #212c44;
+  text-align: center;
+  display: block;
+  margin: 0 auto; }
+
+.subs__button {
+  border-color: #81cada;
+  text-transform: uppercase;
+  color: white;
+  font-family: 'league_spartanregular';
+  font-size: 18px;
+  margin-top: 20px; }
+
+.footer {
+  color: #7c8a96; }
+
+.menu__list {
+  margin: 0 auto;
+  font-size: 24px;
+  width: 502px;
+  margin-bottom: 25px;
+  text-align: center; }
+  .menu__list:after {
+    content: '';
+    display: block;
+    clear: both; }
+
+.menu__item {
+  float: left;
+  margin-right: 15px;
+  display: inline-block;
+  vertical-align: middle; }
+  .menu__item:after {
+    content: "";
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    margin-left: 15px;
+    display: inline-block;
+    vertical-align: middle;
+    background: #7c8a96; }
+  .menu__item:last-child:after {
+    display: none; }
+  .menu__item:last-child {
+    margin-right: 0px; }
+
+.menu__link {
+  color: #7c8a96; }
+
+.copyright {
+  width: 560px;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 20px; }
+
+/*# sourceMappingURL=style.css.map */
