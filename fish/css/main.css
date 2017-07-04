@@ -372,6 +372,8 @@ a {
   background-color: #fff;
   color: #00a1eb;
   padding: 10px 0px; }
+  .map__btn :hover {
+    background-color: #eee; }
 
 .line_w {
   background-color: #fff; }
